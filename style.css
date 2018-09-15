@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    color: #555;
+    font-family: Open Sans;
+    font-size: 16px;
+    position: relative;
+    height: 100vh;
+    font-weight: 400;
+}
+
+.add {
+    padding: 14px;
+    border-bottom: 1px solid #e7e7e7;
+    background-color: #f7f7f7;
+}
+
+.add_todo {
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    color: inherit;
+    font-family: inherit;
+    font-size: 20px;
+    padding: 12px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: border 0.2s;
+    width: 400px;
+}
+    
+.add_btn {
+    font-size: 35px;
+    background: none;
+    border: none;
+    color: aqua;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.1;
+    margin-left: 10px;
+}
+
+.add_btn:active {
+    transform: translateY(2px);
+}
+
+
+
+
+.container {
+    width: 1000px;
+    margin: 60px auto;
+}
+
+.todos {
+    float: left;
+    width: 475px;
+    margin-right: 50px;
+    
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    
+}
+
+.item {
+    padding: 30px;
+    border-bottom: 1px solid #e7e7e7;
+} 
+
+.item_description {
+    float: left;
+
+}
+
+.item_delete {
+    float: left;
+
+}
+
+.item_delete--btn {
+    font-size: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    display: none;
+}
+
+.item_delete--btn:focus { outline: none; }
+.item_delete--btn:active { transform: translateY(2px); }
+
+.item:hover .item_delete--btn { display: block; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
