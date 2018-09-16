@@ -5,7 +5,11 @@ const model = (function() {
         this.description = description;
     };
 
+<<<<<<< HEAD
     let allTodos = [];
+=======
+    var allTodos = [];
+>>>>>>> e54dbbcb19a56c034a995c394cf323d15a638e98
     
     return {
         addItem: function(desc) {
@@ -23,6 +27,7 @@ const model = (function() {
             return newItem;
         },
 
+<<<<<<< HEAD
         deleteItem: function(id){
             // Iterate over allTodos and return current index id
 
@@ -35,6 +40,8 @@ const model = (function() {
 
         },
 
+=======
+>>>>>>> e54dbbcb19a56c034a995c394cf323d15a638e98
         testing: function() {
             console.log(allTodos);
         }
@@ -73,11 +80,19 @@ const view = (function() {
             let fields = document.querySelector('.add_todo').value = '';
             console.log(fields);
 
+<<<<<<< HEAD
         },
 
         deleteListItem: function(selectorID) {
             let element = document.getElementById(selectorID);
             element.parentNode.removeChild(element);
+=======
+            // fieldsArr = Array.prototype.slice.call(fields);
+
+            // fieldsArr.forEach(function(item, index, arr) {
+            //     item.value = '';
+            // })
+>>>>>>> e54dbbcb19a56c034a995c394cf323d15a638e98
         }
     };
 })();
@@ -95,12 +110,18 @@ const appControl = (function(model, view) {
                 ctrlAddItem();
             }
     });
+<<<<<<< HEAD
 
         document.querySelector('.container').addEventListener('click', controlDeleteItem)
     };
 
     let ctrlAddItem = function() {
 
+=======
+    };
+
+    let ctrlAddItem = function() {
+>>>>>>> e54dbbcb19a56c034a995c394cf323d15a638e98
         //get the input data
         let input = view.getInput();
         //console.log(input);
@@ -110,11 +131,16 @@ const appControl = (function(model, view) {
 
         //add todo item to view display controller
         view.addListItem(newItem, input);
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> e54dbbcb19a56c034a995c394cf323d15a638e98
         view.clearFields();
 
     };
 
+<<<<<<< HEAD
     let controlDeleteItem = function(e) {
 
         let itemID = e.target.parentNode.parentNode.parentNode.parentNode.id; //select main parent 
@@ -127,12 +153,20 @@ const appControl = (function(model, view) {
  
     }
 
+=======
+>>>>>>> e54dbbcb19a56c034a995c394cf323d15a638e98
 
     return {
         init: function() {
             console.log('started');
             setupEventListeners();
 
+<<<<<<< HEAD
+=======
+            window.onload = function() {
+                document.querySelector('.add_todo').focus;
+            }
+>>>>>>> e54dbbcb19a56c034a995c394cf323d15a638e98
         }
     }
     
